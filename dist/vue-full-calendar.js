@@ -3147,7 +3147,7 @@ var FullCalendar$1 = { render: function render() {
         events: {
             deep: true,
             handler: function handler(val) {
-                this.removeEvents();
+                this.calendar.removeAllEventSources();
                 this.calendar.addEventSource(this.events);
             }
         },
